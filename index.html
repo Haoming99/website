@@ -73,36 +73,6 @@
     The generated complete shapes are then utilized by our model to implement more accurate grasping actions by enlarging the grasping hypothesis. We are doing experiments on a <a href="https://www.kinovarobotics.com/product/gen3-robots">Kinova Gen3</a> robot arm. </p>
   </td>
 </tr>
-<script>
-  let imageIndex = 0;
-  const images = [
-    'images/pts3.png',
-    'images/pts2.png',
-    'images/pts1.png',
-    'images/pts0.png'
-  ];
-
-  function dualfont_start() {
-    imageIndex = 0;  // Start from the first image
-    sequentialImageChange();  // Call the image change function
-  }
-
-  function dualfont_stop() {
-    clearTimeout(imageChangeTimeout);  // Stop the image change when mouse leaves
-  }
-
-  let imageChangeTimeout;
-
-  function sequentialImageChange() {
-    const imgElement = document.getElementById('sequential-image');
-    imgElement.src = images[imageIndex];  // Change image source
-
-    imageIndex = (imageIndex + 1) % images.length;  // Loop through images
-
-    // Schedule the next image change
-    imageChangeTimeout = setTimeout(sequentialImageChange, 1000);  // Change every 1 second
-  }
-</script>
 
 
             
