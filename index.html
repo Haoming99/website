@@ -69,7 +69,7 @@
     <br>
     <p></p>
     <p>We are designing a diffusion-based 3D shape completion method for robotic grasping. 
-      The core of our model is a latent diffusion model which compresses 3D shapes represented by occupancy grids into low resolution latent features, aiming to recover complete shapes from single-view partial scans. 
+      The core of our model is a latent diffusion model which utilizes the compression of 3D shapes in low-resolution latent space obtained from a variational autoencoder, aiming to recover complete shapes from single-view partial scans. 
     The generated complete shapes are then utilized by our model to implement more accurate grasping actions by enlarging the grasping hypothesis. We are doing experiments on a <a href="https://www.kinovarobotics.com/product/gen3-robots">Kinova Gen3</a> robot arm. </p>
   </td>
 </tr>
@@ -90,8 +90,9 @@ Principle Investigator: <a href="https://nbfigueroa.github.io/">Nadia Figueroa</
     <br>
     <p></p>
     <p>We proposed a method that maps RGB-D streams to signed distance functions for real-
-time collision avoidance. Our model is a continuous learning system that reconstructs 3D scenes represented by signed distance fields which are then used to construct control barrier functions in real-time.
-The learned control barrier functions ensure safe robotic navigation by allowing our controller to determine whether an action is safe or unsafe. </p>
+time collision avoidance. Our model is a MLP-based continuous learning system that takes a stream of posed depth images as input and reconstructs 3D scenes represented by signed distance fields which are then used to construct control barrier functions in real-time.
+The learned control barrier functions ensure safe robotic navigation by allowing our controller to determine whether an action is safe or unsafe. The experiments done in the Gazebo simulation environment demonstrated its utility for downstream planners in domains
+from navigation to manipulation. </p>
   </td>
 </tr>
 
@@ -115,7 +116,7 @@ Lipschitz Regularization</span>
     <em>Master' Thesis</em>, 2024
     <br>
     <p></p>
-    <p>We proposed a semantic-informed neural SLAM trying to further enhance the generalization
+    <p>We proposed a semantic-informed neural SLAM trying to enhance the generalization
 capabilities and provide more precise and detailed scene reconstructions and
 robust camera tracking. Our contributions include a novel weight normalization and regularization to
 increase network robustness. Additionally, we explored the benefits of semantic information to
@@ -145,7 +146,8 @@ its potential to impact the fields of robotic navigation.</p>
     <p></p>
     <p> We introduced a divided spatial and temporal context modeling
 network to tackle the shortcomings of CNN-based methods, which is tokens-based and
-passes the global context by well-modeled tokens. The network can produce accurate segmentation masks for temporal remote sensing images. </p>
+passes the global context by well-modeled tokens. By introducing the transformer into modeling the global
+context, the network can produce more accurate segmentation masks for temporal remote sensing images. </p>
   </td>
 </tr>
 
