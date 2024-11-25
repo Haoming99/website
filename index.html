@@ -89,10 +89,8 @@ Neural Radiance Fields</strong>
 Advisor: <a href="https://nbfigueroa.github.io/">Nadia Figueroa</a>
     <br>
     <p></p>
-    <p>We propose a method that maps RGB-D streams to signed distance functions for real-
-time collision avoidance. Our model is a MLP-based continuous learning system that takes a stream of posed depth images as input and reconstructs 3D scenes represented by signed distance fields which are then used to construct control barrier functions in real-time.
-The learned control barrier functions ensure safe robotic navigation by allowing our controller to determine whether an action is safe or unsafe. The experiments done in the Gazebo simulation environment demonstrated its utility for downstream planners in domains
-from navigation to manipulation. </p>
+    <p>We propose a method that maps RGB-D streams to signed distance functions (SDFs) for real-time collision avoidance. Our model is a MLP-based continuous learning system that takes a stream of posed depth images as inputs and reconstructs 3D scenes in real-time.
+We construct control barrier functions (CBFs) using SDFs to ensure safe navigation by determining whether an control action is safe or unsafe. The experiments done in the Gazebo simulation environment demonstrated the effectiveness of our model for safe robotic navigation. </p>
   </td>
 </tr>
 
