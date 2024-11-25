@@ -57,7 +57,7 @@
 <tr onmouseout="dualfont_stop()" onmouseover="dualfont_start()">
   <td style="padding:20px;width:25%;vertical-align:middle">
     <div id="image-container">
-      <img id="sequential-image" src='images/grasping.gif' width="300">
+      <img id="sequential-image" src="images/grasping.gif" width="300">
     </div>
   </td>
   <td style="padding:20px;width:75%;vertical-align:middle">
@@ -73,6 +73,17 @@
     At runtime, our method takes a single view depth image as input and generates accurate grasp poses based on the completed 3D shape. 
   </td>
 </tr>
+
+<script>
+  const dualfont_start = () => {
+    document.getElementById('sequential-image').src = 'images/DiffGPD.png'; // Replace with your alternate image path
+  };
+
+  const dualfont_stop = () => {
+    document.getElementById('sequential-image').src = 'images/grasping.gif'; // Reset to the original image
+  };
+</script>
+
 
 
             
